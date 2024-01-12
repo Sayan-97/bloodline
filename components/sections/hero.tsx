@@ -5,7 +5,7 @@ import HeroBG from "@/public/imgs/hero-bg.png";
 export default function Hero() {
   return (
     <div className="w-full min-h-screen relative">
-      {/* <Image src={BGImage} alt="img" fill className="-z-10" /> */}
+      <Image src={BGImage} alt="img" fill className="-z-10" />
       <div className="container pt-32 flex flex-col items-center">
         <div className="absolute top-20 z-10">
           <div className="absolute -inset-x-8 inset-y-8 bg-white rounded-full bg-opacity-30 blur-3xl -z-10"></div>

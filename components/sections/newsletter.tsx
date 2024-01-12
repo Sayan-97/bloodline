@@ -1,9 +1,12 @@
 import React from "react";
 import Head from "../shared/head";
+import Image from "next/image";
+import BGImage from "@/public/imgs/black-concrete-wall-2.png";
 
 export default function Newsletter() {
   return (
-    <div className="container py-20 flex flex-col items-center gap-12">
+    <div className="relative container py-20 flex flex-col items-center gap-12">
+      <Image src={BGImage} alt="img" fill className="-z-10" />
       <div className="relative">
         <div className="absolute bg-white inset-0 -z-10 rounded-full bg-opacity-20 blur-3xl"></div>
         <Head

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "../shared/head";
+import BGImage from "@/public/imgs/black-concrete-wall-2.png";
 
 export default function Heroes() {
   const heroes = [
@@ -10,7 +11,8 @@ export default function Heroes() {
     { name: "Leo Presley", image: "/imgs/hero-5.png" },
   ];
   return (
-    <div className="container space-y-12 py-20">
+    <div className="container space-y-12 py-20 relative">
+      <Image src={BGImage} alt="img" fill className="-z-10" />
       <Head title="meet our heroes" />
       <div className="grid lg:grid-cols-5 gap-12">
         {heroes.map((item, index) => (

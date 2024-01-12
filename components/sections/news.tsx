@@ -2,10 +2,12 @@ import React from "react";
 import Head from "../shared/head";
 import { news } from "@/constants";
 import Image from "next/image";
+import BGImage from "@/public/imgs/black-concrete-wall-2.png";
 
 export default function News() {
   return (
-    <div className="container py-20 flex flex-col items-center gap-16">
+    <div className="container py-20 flex flex-col items-center gap-16 relative">
+      <Image src={BGImage} alt="img" fill className="-z-10" />
       <div className="relative">
         <div className="absolute bg-white inset-0 -z-10 rounded-full bg-opacity-25 blur-3xl"></div>
         <Head title="the news nest" />
